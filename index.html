@@ -21,21 +21,35 @@
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm">
   <style>
-  * {
-    font-family: "Hind", sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-  }
-  h1 {
-    font-family: "Qwigley", serif;
-    font-size: 60px;
-    font-weight: 400;
-  }
+    * {
+      font-family: "Hind", sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+    }
+    h1 {
+      font-family: "Qwigley", serif;
+      font-size: 60px;
+      font-weight: 400;
+    }
+
+    .fullscreen-background {
+      background: url("images/background.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    div.glass-pane {
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        min-height: 42vh;  /* always cover at least the sky */
+    }
   </style>
 
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover align-middle">
+<body class="font-sans antialiased fullscreen-background text-gray-900 leading-normal tracking-wider bg-cover align-middle">
     <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-32 lg:my-0">
         <div class="md:flex flex-wrap shadow-none lg:shadow-2xl rounded-lg">
             <div class="lg:flex lg:w-2/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none bg-white opacity-75 mx-6 lg:mx-0">
